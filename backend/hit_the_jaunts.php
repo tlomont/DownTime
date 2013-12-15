@@ -1,0 +1,11 @@
+<?php
+include("dbconnect.php");
+$yeee=$db->yeee;
+$cursor=$yeee->find(array("yeee"=>"yeee"));
+if($cursor->count()!=0){
+	echo("yeee");
+}
+else{
+	echo("no");
+}
+?>
